@@ -1,0 +1,2016 @@
+html , body { 
+    overflow-x: hidden;
+    color: #333;
+    background-color: #f5f5f5;
+}
+* { 
+    padding: 0; 
+     margin: 0;
+}
+ul ,ol { 
+    list-style-type: none;
+}
+a { 
+    text-decoration: none;
+}
+video { 
+    width: 100%;
+}
+@font-face {
+    font-family: "Bold";
+    src: url(../fonts/SFUIText-Bold.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../fonts/SFUIText-Light.otf);
+}
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/SFUIText-Regular.otf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../fonts/SFUIText-Italic.otf);
+}
+.blog { 
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+    border-right: 1px solid #c0c0c0;
+}
+.blog .flexed { 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.blog .flexed .row {
+    flex-basis: 10%;
+    z-index: 111;
+}
+.blog .flexed .posts { 
+    flex-basis: 50% ;
+}
+.blog .flexed .suggestions { 
+    flex-basis: 25%;
+}
+.blog .row { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px 0;
+    border-right: 1px solid #cbcbcb;
+    position: fixed;
+    background-color: #f5f5f5;
+}
+.blog .row .col { 
+    flex-basis: 11.1%;
+}
+.blog .row .col .logo { 
+    position: relative;
+    padding: 0 0 20px 0;
+}
+.blog .row .col .logo img { 
+    width: 150px;
+}
+.blog .row .col .flex { 
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+.blog .row .col .flex .left i { 
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+}
+.blog .row .col .flex .right h2 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+
+}
+.blog .posts { 
+    padding: 50px;
+    position: relative;
+}
+.blog .posts .row-post { 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 30%;
+    border: 1px solid #dbdbdb;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.blog .posts .row-post .col-post { 
+    flex-basis: 16.6%;
+}
+.blog .posts .row-post .col-post .flexed-story { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    padding: 5px 0;
+    align-items: center;
+}
+.blog .posts .row-post .col-post .flexed-story .top { 
+    position: relative;
+}
+.blog .posts .row-post .col-post .flexed-story .top a img { 
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid #f333d9;
+    border-radius: 100%;
+}
+.blog .posts .row-post .col-post .flexed-story .bottom { 
+    position: relative;
+}
+.blog .posts .row-post .col-post .flexed-story .bottom h3 { 
+    font-size: 13px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) { 
+    flex-direction: column;
+    margin: 30px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(2) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(2) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(2) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(2) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(2) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(2) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(2) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(2) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+.blog .suggestions { 
+    padding: 60px 0;
+    position: relative;
+}
+.blog .suggestions .row-sugg { 
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.blog .suggestions .row-sugg .left-sugg { 
+    position: relative;
+}
+.blog .suggestions .row-sugg .right-sugg { 
+    position: relative;
+}
+.blog .suggestions .row-sugg .right-sugg h3 { 
+    font-size: 17px;
+    font-family: "Bold";
+    color: #333;
+    cursor: pointer;
+}
+.blog .suggestions .row-sugg .end-sugg { 
+    position: absolute;
+    left: 85%;
+}
+.blog .suggestions .row-sugg .left-sugg i { 
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background: #333;
+    color: #fff;
+}
+.blog .suggestions .row-sugg .end-sugg .switch-span { 
+    color: #0a99d1;
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.blog .suggestions .row-col-sugg {
+    display: flex;
+    column-gap: 10px;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ }
+ .blog .suggestions .row-col-sugg .left-sugg-one { 
+position: relative;
+ }
+ .blog .suggestions .row-col-sugg .left-sugg-one h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #b3b0b0;
+ }
+ .blog .suggestions .row-col-sugg .right-sugg-one { 
+  position: absolute;
+  left: 85%;
+}
+
+.blog .suggestions .row-col-sugg .right-sugg-one .all { 
+        font-size: 15px;
+    font-family: "Regular";
+    color: #333333;
+    cursor: pointer;
+}
+
+.blog .suggestions .follow { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 0;
+    position: relative;
+    align-items: center;
+}
+.blog .suggestions .follow .left-follow { 
+    position: relative;
+}
+.blog .suggestions .follow .left-follow img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+}
+.blog .suggestions .follow .right-follow { 
+    position: relative;
+
+}
+.blog .suggestions .follow .right-follow h3 { 
+    font-size: 14px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 10px 0;
+    cursor: pointer;
+
+}
+.blog .suggestions .follow .right-follow h4 { 
+    font-size: 12px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #b3b0b0;
+}
+.blog .suggestions .follow .end-follow { 
+    position: absolute;
+    left: 85%;
+}
+.blog .suggestions .follow .end-follow .switch-span { 
+    color: #0a99d1;
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .suggestions .lisence { 
+    padding: 20px 0;
+    position: relative;
+}
+.blog .suggestions .lisence h2 { 
+    font-size: 12px;
+    font-family: "Regular";
+    color: #b3b0b0;
+    font-weight: 100;
+}
+
+/* Post number two */ 
+
+
+.blog .row-post:nth-child(3) { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(3) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(3) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(3) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(3) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(3) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(3) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(3) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(3) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+/* Post number three */ 
+
+
+.blog .row-post:nth-child(4) { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(4) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(4) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(4) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(4) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(4) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(4) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(4) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(4) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+/* Post number 4 */ 
+	
+.blog .row-post:nth-child(5) { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(5) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(5) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(5) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(5) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(5) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(5) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(5) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(5) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+/* Post number 5 */
+.blog .row-post:nth-child(6) { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(6) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(6) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(6) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(6) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(6) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(6) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(6) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(6) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+/* Post number 6 */
+	
+.blog .row-post:nth-child(7) { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.blog .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.blog .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.blog .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.blog .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(7) .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .actualPost { 
+    position: relative;
+}
+.blog .row-post:nth-child(7) .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.blog .row-post:nth-child(7) .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.blog .row-post:nth-child(7) .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.blog .row-post:nth-child(7) .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.blog .row-post:nth-child(7) .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.blog .row-post:nth-child(7) .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 91%;
+}
+.blog .row-post:nth-child(7) .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+/* Load more */
+.blog .load-more { 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.blog .load-more .content { 
+    text-align: center;
+}
+.blog .load-more .content h3 { 
+    font-size: 16px;
+    font-family: "Regular";
+    font-weight: 200;
+    color: #b3b0b0;
+    cursor: pointer;
+}
+
+/* The hamburger bar in search */
+
+/* The end of hamburger bar search */
+
+/* Mobile version in HTML - CSS */ 
+
+header { 
+    padding:0  50px; 
+    background-color: #f5f5f5;
+    width: 100%;
+    position: unset;
+}
+header .row { 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+header .row .logo { 
+    position: relative;
+}
+header .row .logo img { 
+    width: 200px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    left: -100%;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+label #btn { 
+    color: #333;
+}
+
+.sidebar ul li a {
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+}
+
+.sidebar ul li ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 25px;
+    color: #c9c9c9;
+    padding: 0 0 0 40px;
+    transition: .5s all linear;
+    position: relative;
+  
+    left: calc(1% - 25px);
+    top: 50px;
+}
+.sidebar ul li ul li .flex { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    color: #333;
+    padding: 5px 30px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+.sidebar ul li ul li .flex .left { 
+    position: relative;
+}
+.sidebar ul li ul li .flex .left .online { 
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+.sidebar ul li ul li .flex .left .online i { 
+    font-size: 17px;
+    color: #36f055;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 100%;
+}
+.sidebar ul li ul li .flex .left img { 
+width: 50px;
+    border: 1px solid;
+    border-radius: 100%;    
+    height: 50px;
+
+}
+.sidebar ul li ul li .flex .right {     
+    position: relative;
+    flex-basis: 95%;
+}
+.sidebar ul li ul li .flex .right h4 { 
+    font-size: 13px;
+    font-family: "Regular";
+    color: #000;
+}
+.sidebar ul li ul li .flex .right h3 { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #666565;
+}
+.sidebar ul li ul li .flex .end { 
+    position: relative;
+    padding: 30px 0;
+    flex-basis: 10%;
+}
+.sidebar ul li ul li .flex .end i { 
+    font-size: 20px;
+    color: #939393;
+}
+
+.sidebar ul li ul li:hover a {
+    color: #333;
+}
+
+#check {
+    display: none;
+    position: relative;
+}
+.msg-recieved { 
+    position: relative;
+    top: 20px;
+
+}
+.msg-recieved i { 
+    font-size: 20px;
+    color: rgb(252, 84, 84);
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+label #btn {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 6px;
+    left: 95%;
+    top: 3%;
+    font-size: 17px;
+    padding: 6px 12px;
+}
+
+label #cancel {
+    position: fixed;
+  z-index: 111111;
+    left: -80%;
+    top: 1%;
+    font-size: 25px;
+    padding: 6px 12px;
+    color: #888888;
+    cursor: pointer;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+    bottom: 0;
+    transition: 0.4s ease-in;
+}
+
+#check:checked~label #btn {
+    opacity: 1;
+    pointer-events: none;
+ 
+}
+
+#check:checked~label #cancel {
+    left: -1%;
+ 
+}
+.mobile-ver { 
+    padding: 20px 20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+.mobile-ver .container { 
+    position: relative;
+}
+.mobile-ver .row { 
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-ver .row .col { 
+    flex-basis: 16.6%;
+}
+.mobile-ver .row .col .top-story { 
+
+ position: relative;
+}
+.mobile-ver .row .col .top-story img { 
+    width: 100px;
+    height: 100px;
+    border: 2px solid #36f055;
+    border-radius: 100%;
+}
+.mobile-ver  .row-post { 
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 20px 0;
+    
+}
+.mobile-ver  .row-post .myProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.mobile-ver  .row-post .myProfile .left-profile { 
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.mobile-ver  .row-post .myProfile .left-profile a img { 
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #f333d9;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .myProfile .right-profile { 
+    position: relative;
+}
+.mobile-ver  .row-post .myProfile .right-profile h3 { 
+    font-size: 15px;
+    color: #333;
+    font-family: "Regular";
+    font-weight: 200;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .myProfile  .end-profile { 
+    position: absolute;
+    left: 95%;
+}
+.mobile-ver  .row-post .myProfile .end-profile .floated-right { 
+    color: #333;
+    font-size: 5px;
+    font-family: "Regular";
+    float: right;
+    font-weight: 100;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .actualPost { 
+    position: relative;
+}
+.mobile-ver .row-post .actualPost img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.mobile-ver  .row-post .options { 
+    position: relative;
+    padding: 10px 20px;
+}
+.mobile-ver  .row-post .options .options-row { 
+    display: flex;
+    column-gap: 50px;
+    padding: 5px 0;
+}
+.mobile-ver  .row-post .options .options-row .options-right { 
+  
+    position: absolute;
+    left: 95%;
+}
+.mobile-ver  .row-post .options .options-row i { 
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+}
+.mobile-ver  .row-post .options .options-row i:hover { 
+    filter: brightness(50%);
+    box-shadow: 0 5px 25px rgb(224, 224, 224);
+    border-radius: 100%;
+    background-color: rgb(221, 220, 220);
+    outline: none;
+    
+}
+.mobile-ver  .row-post .informations-about-post { 
+    padding: 10px 0;
+    position: relative;
+}
+.mobile-ver  .row-post .informations-about-post .about-row { 
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments { 
+    padding: 10px 20px;
+    position: relative;
+}
+
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments h3 { 
+    
+      font-size: 20px;
+      color: #333;
+      font-family: "Bold";
+      font-weight: 1000;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments .title-post { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 300;    
+
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments h4 { 
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments h5 { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments .translation { 
+    font-size: 15px;
+    font-family: "Bold";
+    color: #333;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child { 
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child .comment-left { 
+    position: relative;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child .comment-right { 
+    position: relative;
+    flex-basis: 75%;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child .comment-right input { 
+    width: 100%;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px 12px;
+    font-family: "Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child .comment-right input::placeholder { 
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #c0c0c0;
+}
+.mobile-ver  .row-post .informations-about-post .about-row .col-comments:last-child .comment-end { 
+    position: absolute;
+    left: 85%;
+}
+.mobile-ver .row-post .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+    color:#0a99d1;
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    cursor: pointer;
+}
+.mobile-ver .load-more { 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.mobile-ver .load-more .content { 
+    text-align: center;
+}
+.mobile-ver .load-more .content h3 { 
+    font-size: 16px;
+    font-family: "Regular";
+    font-weight: 200;
+    color: #b3b0b0;
+    cursor: pointer;
+}
+
+.mobile-ver { 
+    display: none;
+}
+header { 
+    display: none;
+}
+
+.bottom-header { 
+    display: none ;
+   
+}
+.bottom-header .row-bot { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.bottom-header .row-bot .col { 
+    flex-basis: 25%;
+}
+.bottom-header .row-bot .col .icon { 
+    position: relative;
+}
+.bottom-header .row-bot .col .icon  a i { 
+    font-size: 16px;
+    color: #333;
+}
+#grey-icon { 
+    color: rgb(155, 152, 152);
+}
+
+/*End of the HTML - CSS code */ 
+
+
+@media only screen and (max-width:400px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .mobile-ver { 
+        display: block;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 96%;
+    }
+    header { 
+        padding: 0;
+        display: block;
+    }
+    header .row .logo img { 
+        width: 100px;
+    }
+    header .row { 
+        padding: 10px 0;
+    }
+    label #btn { 
+         left: 80%;
+         font-size: 18px;
+    }
+    .msg-recieved {     
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+    .msg-recieved i { 
+        right: 29px;
+    top: 0;
+    position: absolute;
+    }
+    .mobile-ver { 
+        padding: 0;
+        top: 5px;
+    }
+    .mobile-ver .row .col .top-story img { 
+        width: 50px;
+        height: 50px;
+    }
+    .mobile-ver .row .col .bottom-story h3 { 
+        font-size: 15px;
+    font-family: "regular";
+    padding: 0 10px;
+    color: #303030;
+    }
+    #dissapear { 
+        display: none;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments h3 { 
+        font-size: 12px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments .title-post { 
+        font-size: 12px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments h5 { 
+        font-size: 10px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments .translation { 
+        font-size: 11px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments h4 { 
+        font-size: 13px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:401px) and (max-width:600px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 96%;
+    }
+    .mobile-ver { 
+        display: block;
+    }
+    header { 
+        padding: 0;
+        display: block;
+    }
+    header .row .logo img { 
+        width: 100px;
+    }
+    label #btn {
+        left: 90%;
+     }
+     
+     .msg-recieved { 
+        display: block;
+        top: 10px;
+     }
+     .msg-recieved i { 
+        left: -16px;
+        font-size: 10px;
+        top: -10px;
+     }
+     .mobile-ver { 
+        padding: 0;
+        top: 5px;
+     }
+     .mobile-ver .row .col .top-story img { 
+        width: 65px;
+        height: 65px;
+     }
+     .mobile-ver .row .col .bottom-story h3 { 
+        font-size: 13px;
+     }
+     .mobile-ver .row-post .informations-about-post .about-row .col-comments h3 { 
+        font-size: 12px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments .title-post { 
+        font-size: 12px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments h5 { 
+        font-size: 10px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments .translation { 
+        font-size: 11px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments h4 { 
+        font-size: 13px;
+    }
+    .mobile-ver .row-post .informations-about-post .about-row .col-comments:last-child .comment-end .post-span { 
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:920px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .bottom-header { 
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 96%;
+    }
+    .blog { 
+        display: none;
+    }
+    .mobile-ver { 
+        display: block;
+    }
+    
+    header { 
+        padding: 0;
+        display: block;
+        align-items: center;
+    }
+    header .row .logo img { 
+        width: 125px;
+    }
+    label #btn {
+        top: 5%;
+        left: 91%;
+    }
+    .msg-recieved { 
+            right: 50px;
+    }
+    .msg-recieved i {
+        font-size: 13px;
+        color: rgb(252, 84, 84);
+        position: absolute;
+        left: 24px;
+        top: -12px;
+    }    
+    .mobile-ver { 
+        top: 0;
+        padding: 0;
+    }
+    .mobile-ver .row .col .top-story img { 
+        width: 80px;
+        height: 80px;
+    }
+    .mobile-ver .row .col .bottom-story h3 { 
+        font-size: 17px;
+    font-family: "Regular";
+    font-weight: 200;
+    color: #333;
+    }
+}
+@media only screen and (min-width:920px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .mobile-ver { 
+        display: none;
+    }
+    header { 
+        display: none;
+    }
+    .blog { 
+        display: block;
+    }
+    .blog .suggestions .row-col-sugg .right-sugg-one .all {
+font-size: 12px;
+    }
+}
+@media only screen and (min-width:1241px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .mobile-ver { 
+        display: none;
+    }
+    header { 
+        display: none;
+    }
+    .blog { 
+        display: block;
+    }
+}

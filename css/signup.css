@@ -1,0 +1,267 @@
+html , body  { 
+    overflow-x: hidden;
+    color: #333;
+}
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Bold";
+    src: url(../fonts/SFUIText-Bold.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../fonts/SFUIText-Light.otf);
+}
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/SFUIText-Regular.otf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../fonts/SFUIText-Italic.otf);
+}
+a { 
+    text-decoration: none;
+}
+ul , ol { 
+    list-style-type: none;
+}
+.blog { 
+    padding: 20px 500px;   
+     background-color: #fff;
+}
+.blog .center { 
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #c9c8c8;
+    margin: 0 30px;
+    position: relative;
+}
+.blog .center .logo { 
+    padding: 20px 0 20px 0;
+}
+.blog .center .logo img { 
+    width: 200px;
+}
+.blog .center .or { 
+    text-align: center;
+    position: relative;
+}
+.blog .center .or h3 { 
+    font-size: 12px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #a9a9a9;
+}
+.blog .center .or h3::before { 
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 1px;
+    background-color: #a9a9a9;
+    left: calc(29% - 25px);
+    top: 50%;
+}
+.blog .center .or h3::after { 
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 1px;
+    background-color: #a9a6a6;
+    left: calc(63% - 25px);
+    top: 50%;
+}
+.blog .center .fb-login { 
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0 40px;
+}
+.blog .center .fb-login h2 { 
+    color: rgba(142, 142, 142);
+    font-size: 17px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .center .fb-login a button { 
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    background-color: #0a99d1;
+    color: #fff;
+    font-family: "Regular";
+    font-weight: 300;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+     
+}
+.blog .center .flex { 
+    padding: 20px 0;
+    margin: 0 40px;
+   display: flex;
+     flex-direction: column;        
+   justify-content: space-around;
+} 
+.blog .center .flex input { 
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    border: 1px solid #b8b8b8;
+    color: #333;
+    font-family: "Light";
+    font-size: 14px;
+    border-radius: 3px;
+
+}
+.blog .center .flex input::placeholder { 
+    font-size: 10px;
+    font-family: "Regular";
+    color: #b8b8b8;
+    font-weight: 300;
+}
+.blog .center .info { 
+    padding: 5px 0;
+    margin:  0 40px;
+}
+.blog .center .info h4 { 
+    font-size: 13px;
+    color: rgba(142, 142, 142);
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .center .info span { 
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .center .complete { 
+    padding: 5px 0;
+    margin: 0 40px;
+    text-align: center;
+}
+.blog .center .complete h4 { 
+    font-size: 13px;
+    color: rgba(142, 142, 142);
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .center .complete span { 
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .center .complete a button { 
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    background-color: #0a99d1;
+    color: #fff;
+    font-family: "Regular";
+    font-weight: 300;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.blog .login { 
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #c9c8c8;
+    margin: 20px 30px;
+    position: relative;
+}
+.blog .login h3 { 
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .login .span-login a { 
+    color: #0a99d1;
+    font-size: 15px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .app-s { 
+    padding: 15px 0;
+    margin: 20px 30px;
+    display: block;
+    text-align: center;
+    
+}
+.blog .app-s .img  .applications img { 
+    width: 150px;
+    cursor: pointer;
+}
+.blog .app-s .img { 
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.blog .app-s .img .applications #microsoft { 
+    width: 130px;
+    border-radius: 10px;
+}
+span { 
+    cursor: pointer;
+}
+.blog .app-s h3 { 
+    padding: 10px 0;
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+    font-family: "Regular";
+    font-weight: 100;
+}
+@media only screen and (max-width:700px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        padding: 20px;
+    }
+}
+@media only screen and (min-width:701px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        padding: 50px;
+    }
+}
+@media only screen and (min-width:1241px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+
+}

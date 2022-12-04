@@ -1,0 +1,363 @@
+html , body  { 
+    overflow-x: hidden;
+    color: #333;
+}
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(../fonts/SFUIText-Bold.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../fonts/SFUIText-Light.otf);
+}
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/SFUIText-Regular.otf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../fonts/SFUIText-Italic.otf);
+}
+a { 
+    text-decoration: none;
+}
+ul , ol { 
+    list-style-type: none;
+}
+.blog { 
+    padding: 50px 100px;
+    background-color: #f5f5f5;
+}
+.blog .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 10px 0;
+}
+.blog .row .col { 
+    flex-basis: 50%;
+}
+.blog .row .col:first-child { 
+    position: relative;
+}
+.blog .row .col .changed { 
+    position: absolute;
+    right: 13%;
+    top: 4%;
+}
+.blog .row .col:last-child { 
+    border: 1px solid #c9c8c8;
+    text-align: center;
+    margin: 0 150px;
+    padding: 20px 40px;
+    position: relative;
+    right: 70px;
+}
+.blog .row .col img { 
+   
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.blog .row .col .logo { 
+    padding: 0 0 30px 0;
+}
+.blog .row .col .app-s .flex .col  .google-play , .microsoft { 
+    width: 150px;
+}
+.blog .row .col .ig-logo { 
+    width: 200px;
+}
+.blog .row .col .form { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.blog .row .col .form input { 
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    border: 1px solid #b8b8b8;
+    color: #333;
+    font-family: "Light";
+    font-size: 14px;
+    border-radius: 3px;
+}
+.blog .row .col .form input::placeholder { 
+    font-size: 10px;
+    font-family: "Regular";
+    color: #b8b8b8;
+    font-weight: 300;
+}
+.blog .row .col .btn { 
+    text-align: center;
+    padding: 0 20px;
+
+}
+.blog .row .col .btn a button { 
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: "Regular";
+    color: #fff;
+    background-color: #0a99d1;
+    outline: none;
+    border: 1px solid #0a99d1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.blog .row .col .or { 
+    padding: 25px 0;
+    position: relative;
+}
+.blog .row .col .or h3 { 
+    font-size: 16px;
+    color: #b8b8b8;
+    font-family: "Bold";
+}
+.blog .row .col .or h3::before { 
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 1px;
+    color: #b8b8b8;
+    background-color: #b8b8b8;
+    left: calc(20% - 25px);
+    bottom: 48.8%;
+}
+.blog .row .col .or h3::after { 
+    content: " ";
+    position: absolute;
+    display: block; 
+    width: 80px;
+    height: 1px;
+    color: #b8b8b8;
+    background-color: #b8b8b8;
+    left: calc(68% - 25px);
+    bottom: 49.8%;
+}
+.blog .row .col .forgot { 
+         text-align: center; 
+           padding: 15px 0;
+           align-items: center;
+}
+.blog .row .col .forgot a { 
+    color: #385185;
+}
+.blog .row .col .forgot a h2 i { 
+    color: #385185;
+    font-size: 18px;
+}
+.blog .row .col .forgot a h2 { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #385185;
+    font-weight: 100;
+}
+.blog .row .col .forgot a h4 { 
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .row .col .flex { 
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+.blog .row .col .flex .col-flex .google-play { 
+    width: 120px;
+
+}
+.blog .row .col .flex .col-flex .microsoft { 
+    width: 100px;
+   
+}
+.blog .row .col .sign-up { 
+    padding: 10px 0 30px 0;
+    border-top: 1px solid #dbdbdb;
+}
+.blog .row .col .sign-up h3 { 
+    font-size: 13px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 100;
+}
+.blog .row .col .sign-up .sign-up-span { 
+    color: rgba(0, 149, 246);
+    font-size: 13px;
+    font-family: "Regular";
+    font-weight: 100;
+}
+.blog .row .col .app-s { 
+   text-align: center;
+   padding: 2px 0;
+}
+.blog .row .col .app-s h3 { 
+    font-size: 15px;
+    font-family: "Regular";
+    color: #333;
+    font-weight: 100;
+}
+@media only screen and (max-width:700px) { 
+    html , body {  
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+      
+        padding: 20px;
+    }
+    .blog .row { 
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog .row .col:first-child { 
+        display: none;
+    }
+    .blog .row .col:last-child { 
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border: none;
+    }
+    .blog .row .col .form { 
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 10px 50px;
+    }
+    .blog .row .col .btn { 
+        padding: 0 50px;
+    }
+    .blog .row .col .or h3::after , .blog .row .col .or h3::before { 
+        bottom: 49.8%;
+    }
+    .blog .row .col .or h3::before { 
+        left: calc(27% - 25px);
+    }
+}
+@media only screen and (min-width:701px) and (max-width:920px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        padding: 50px;
+    }
+    .blog .row { 
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
+    .blog .row .col:first-child { 
+        display: none;
+    }
+    .blog .row .col:last-child { 
+        right: 0;
+        margin: 0 100px;
+    }
+}
+@media only screen and (min-width:921px) and (max-width:1000px) { 
+    html , body  { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0; 
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        padding: 50px;
+    }
+    .blog .row .col:last-child { 
+        margin: 0 120px;
+        right: 100px;
+        padding: 20px 40px;
+    }
+    .blog .row .col .form { 
+        padding: 10px 20px;
+    }
+    .blog .row .col .btn { 
+        padding: 0 20px;
+    }
+
+}
+@media only screen and (min-width:1001px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        padding: 50px 75px;
+    }
+    .blog .row  { 
+        column-gap: 0;
+    }
+    .blog .row .col:last-child { 
+        padding: 20px 50px;
+    }
+    .blog .row .col .form { 
+        padding: 10px 0;
+    }   
+    .blog .row .col .btn { 
+        padding: 0;
+    }
+}
+@media only screen and (min-width:1241px) and (max-width:1448x) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }   
+
+}
+@media only screen and (min-width:1449px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+  
+}
