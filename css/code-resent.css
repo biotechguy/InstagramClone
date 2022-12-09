@@ -12,6 +12,11 @@ html , body  {
     src: url(../fonts/SFUIText-Bold.otf);
 }
 @font-face {
+    font-family: "Oswald";
+    src: url(../fonts/SFUIText-Regular.otf);
+    font-weight: 100;
+}
+@font-face {
     font-family: "Light";
     src: url(../fonts/SFUIText-Light.otf);
 }

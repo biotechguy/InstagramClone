@@ -32,6 +32,11 @@ video {
     font-family: "Italic";
     src: url(../fonts/SFUIText-Italic.otf);
 }
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/SFUIText-Regular.otf);
+    font-weight: 100;
+}
 .blog { 
     padding: 30px;
     display: flex;
@@ -406,15 +411,421 @@ video {
     font-weight: 100;
     cursor: pointer;
 }
-@media screen and (min-width:920px) and (max-width:1080px) {
+
+
+/* The start of the mobile version */
+.top-header { 
+    display: none;
+    padding: 10px 12px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 11112;
+    top: 3%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.top-header .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding: 5px 25px;
+    align-items: center;
+}
+.top-header .row .left { 
+    position: relative;
+    left: 10px;
+    align-items: center;
+    display: flex;
+    column-gap: 20px;
+}
+.top-header .row .right { 
+    position: relative;
+    right: 10px;
+    align-items: center;
+}
+.top-header .row .left i { 
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+.top-header .row .left h3 { 
+    font-size: 16px;
+    font-family: "Regular";
+    font-weight: 200;
+    color: rgb(72, 70, 70);
+    cursor: pointer;
+}
+.top-header .row .left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #dbdbdb;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+}
+.top-header .row .left .profile { 
+    position: relative;
+}
+.top-header .row .left .profile .online { 
+    position: absolute;
+   right: 0;
+   top: 30px;
+}
+.top-header .row .left .profile .online i { 
+    color: rgb(102, 240, 84);
+    font-size: 16px;
+}
+.top-header .row .right .call { 
+    display: flex;
+    column-gap: 30px;
+}
+.top-header .row .right .call i { 
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+.bottom-header { 
+    display: none;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 11112;
+    background: #fff;
+    width: 100%;
+    top: 95%;
+}
+.bottom-header .row-bot { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    position:relative;
+    left: 0;
+}
+.bottom-header .row-bot .col { 
+    flex-basis: 25%;
+}
+.bottom-header .row-bot .col .icon { 
+    position: relative;
+}
+.bottom-header .row-bot .col .icon  a i { 
+    font-size: 16px;
+    color: #333;
+}
+#grey-icon { 
+    color: rgb(155, 152, 152);
+}
+.blog-important { 
+    padding: 15px 30px;
+    background-color: #f3f3f3;
+  height: 100vh;
+  display: none;
+}
+.blog-important .row { 
+  
+    position: relative;
+}
+.blog-important .row .left { 
+    position: relative;
+    flex-basis: 50%;
+}
+.blog-important .row .right { 
+    position: relative;
+    flex-basis: 50%;
+
+}
+.blog-important .row .left h3 { 
+    font-size: 15px;
+    font-family: "Regular";
+    padding: 7px;
+    border: 1px solid #c0bfbf;
+    border-radius: 30px;
+    color: #333;
+    font-weight: 100;
+    padding: 12px;
+    width: max-content;
+    margin: 10px 0;
+}
+.blog-important .row .right .fly h3 { 
+    font-size: 15px;
+    font-family: "Regular";
+    padding: 7px;
+    border: 1px solid #c0bfbf;
+    border-radius: 30px;
+    color: #333;
+    font-weight: 100;
+    padding: 12px;
+    width: max-content;
+    margin: 10px 0;
+    
+}
+.blog-important .row .right .myProfile .left-myProfile .blacked-profile { 
+    font-size: 15px;
+    font-family: "Regular";
+    padding: 7px;
+    border: 1px solid #c0bfbf;
+    border-radius: 30px;
+    color: #333;
+    font-weight: 100;
+    padding: 12px;
+    width: max-content;
+    margin: 10px 0;
+}
+.blog-important .row .right .fly .moved-1 { 
+    position: relative;
+    left: 20px;
+}
+.blog-important .row .right .fly .moved-2 { 
+    position: relative;
+    left: 35px;
+}
+.blog-important .row .right .fly { 
+    position: relative;
+    float: right;
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+.blog-important .row .left .hisProfile .left-profile { 
+    position: relative;
+}
+.blog-important .row .left .hisProfile .left-profile img { 
+    width: 50px;
+    height: 50px;
+    border: 2px solid #dbdbdb;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.blog-important .row .right .myProfile { 
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    top: 200px;
+    left: 200px;
+}
+.blog-important .row .right .myProfile .right-myProfile { 
+    position: relative;
+}
+.blog-important .row .right .myProfile .right-myProfile img { 
+    width: 50px;
+    height: 50px;
+    border: 2px solid #dbdbdb;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.blog-important .row .left .fly-1 { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.blog-important .row .left .hisProfile { 
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+.blog-important .search-input { 
+    position: fixed;
+    width: 100%;
+    top: 87%;
+    background-color: #f3f3f3;
+    z-index: 11111111;
+}
+.blog-important .search-input .input { 
+    position: relative;
+}
+.blog-important .search-input .input input { 
+    width: 90%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: "Regular";
+    font-weight: 200;
+    color: #333;
+    outline: none;
+    margin: 7px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    position: relative;
+    left: 30px;
+    border-radius: 25px;
+}
+.blog-important .search-input .input i { 
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(230, 83, 230);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.blog-important .search-input .call-more { 
+    display: flex;
+    justify-content: space-between;
+     column-gap: 25px;
+     align-items: center; 
+     position: absolute;
+     top: 20px;
+     right: 100px;
+     cursor: pointer;
+}
+.blog-important .search-input .call-more i { 
+    font-size: 14px;
+    color: rgb(69, 69, 69);
+}
+.blog-important .row .right .myProfile .left-myProfile { 
+    position: relative;
+}
+.blog-important .row .right .myProfile .left-myProfile i { 
+    position: absolute;
+    left: 0;
+    color: rgb(242, 52, 52);
+    font-size: 15px;
+    top: 40px;
+}
+
+/* The end of a mobile version  */
+@media only screen and (max-width:350px) { 
     html , body { 
         overflow-x: hidden;
+        background-color: #fff;
+        height: 100vh;
     }
     * { 
         padding: 0;
         margin: 0;
     }
     ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .blog-important , .bottom-header , .top-header { 
+        display: initial;
+        border: none;
+        background:none;
+    }
+    .blog-important .row .right .myProfile { 
+        top: 0;
+        left: 0;
+    }
+    .blog-important .search-input .input input { 
+        width: 75%;
+        left: 35px;
+    }
+    .blog-important .search-input .call-more { 
+        right: 40px;
+    }
+    .blog-important .search-input .input i { 
+        left: 0;
+        top: 5px;
+    }
+    .bottom-header .row-bot { 
+        left: 0;
+    }
+}
+@media only screen and (min-width:351px) and (max-width:650px) { 
+    html , body { 
+        overflow-x: hidden;
+        background-color: #fff;
+        height: 100vh;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .blog-important , .bottom-header , .top-header { 
+        display: initial;
+        border: none;
+        background: none;
+    }
+    .blog-important .search-input .input input { 
+        width: 80%;
+        left: 40px;
+    }
+    .blog-important .search-input .input i { 
+        top: 5px;
+        left: 0;
+    }
+    .blog-important .search-input .call-more { 
+        right: 70px;
+    }
+}
+@media only screen and (min-width:651px) and (max-width:920px) { 
+    html , body { 
+        overflow-x: hidden;
+        background-color: #fff;
+        height: 100vh;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog {
+        display: none;
+    }
+    .blog-important , .bottom-header , .top-header { 
+        display: initial;
+    }
+    .blog-important { 
+        background-color: #fff;
+    }
+    .top-header { 
+        border: none;
+    }
+    .blog-important .row .left { 
+        padding: 0 0 0 20px;
+    }
+    .blog-important .row .right { 
+        padding: 0 20px 0 0;
+    }
+    .blog-important .search-input .input input { 
+        width: 85%;
+        left: 40px;
+    }
+    .blog-important .search-input .input i { 
+        left: 0;
+    }
+}
+@media screen and (min-width:921px) and (max-width:1080px) {
+    html , body { 
+        overflow-x: hidden;
+        background-color: #fff;
+        height: 100vh;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    
+    .blog-important , .bottom-header , .top-header { 
+        display: initial;
+        border: none;
+        background: none;
+    }
+    .blog-important .row .left { 
+        padding: 0 0 0 30px;
+    }
+    .blog-important .row .right { 
+        padding: 0 30px 0 0;
+    }
+    .blog { 
         display: none;
     }
     .blog .live-dm .center-live {
@@ -483,5 +894,33 @@ video {
     .blog .live-dm .center-live { 
         border-left: 0;
         border-bottom: 0;
+    }
+}
+@media only screen and (min-width:1301px) and (max-width:1820px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+@media only screen and (min-width:1821px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .sent-message .input-send { 
+        top: 275px;
+    }
+    .sent-message .hearted-input { 
+        top: 245px;
+    }
+    .live-messages .more-messages .right { 
+        top: 250px;
     }
 }

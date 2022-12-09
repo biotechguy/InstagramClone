@@ -32,6 +32,11 @@ video {
     font-family: "Italic";
     src: url(../fonts/SFUIText-Italic.otf);
 }
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/SFUIText-Regular.otf);
+    font-weight: 100;
+}
 .blog { 
     padding: 30px;
     display: flex;
@@ -1359,18 +1364,19 @@ label #btn {
 }
 
 .sidebar ul li ul li a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 25px;
-    color: #c9c9c9;
-    padding: 0 0 0 40px;
-    transition: .5s all linear;
+   position: relative;
+   float: left;
+}
+#important-link { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    color: #333;
+    padding: 5px 30px;
     position: relative;
-  
-    left: calc(1% - 25px);
     top: 50px;
+    cursor: pointer;
 }
 .sidebar ul li ul li .flex { 
     display: flex;
@@ -1809,6 +1815,7 @@ header {
     #dissapear { 
         display: none;
     }
+   
     .mobile-ver .row-post .informations-about-post .about-row .col-comments h3 { 
         font-size: 12px;
     }

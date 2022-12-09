@@ -19,6 +19,11 @@ video {
     width: 100%;
 }
 @font-face {
+    font-family: "Oswald";
+    src: url(../fonts/SFUIText-Regular.otf);
+    font-weight: 100;
+}
+@font-face {
     font-family: "Bold";
     src: url(../fonts/SFUIText-Bold.otf);
 }
@@ -45,6 +50,8 @@ video {
 .blog .flexed { 
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left: 20px;
     
 }
 .blog .flexed .row {
@@ -638,4 +645,226 @@ header {
     color: rgb(155, 152, 152);
 }
 
+.myblog { 
+    position: relative;
+    padding: 25px;
+    height: 100vh;
+}
+.myblog .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 15px 0;
+}
+.myblog .row .col { 
+    flex-basis: 25%;
+    position: relative;
+}
+.myblog .row .col img { 
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+}
+.myblog .row .col img:hover { 
+    filter: brightness(50%);
+    transition: 0.3s ease-in;
+}
+.myblog .row .col  i { 
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 20px;
+    color: #f3f3f3;
+}
+@media only screen and (max-width:350px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 95%;
+    }
+    .bottom-header .row-bot { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        position:relative;
+        left: 25px;
+    }
+    .bottom-header .row-bot .col { 
+        flex-basis: 25%;
+    }
+    .bottom-header .row-bot .col .icon { 
+        position: relative;
+    }
+    .bottom-header .row-bot .col .icon  a i { 
+        font-size: 16px;
+        color: #333;
+    }
+    #grey-icon { 
+        color: rgb(155, 152, 152);
+    }
+    .myblog { 
+        position: relative;
+        padding: 25px;
+        height: 100vh;
+    }
+    .myblog .row { 
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .myblog .row .col { 
+        flex-basis: 25%;
+        position: relative;
+    }
+    .myblog .row .col img { 
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        cursor: pointer;
+    }
+    .myblog .row .col img:hover { 
+        filter: brightness(50%);
+        transition: 0.3s ease-in;
+    }
+    .myblog .row .col  i { 
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        font-size: 20px;
+        color: #f3f3f3;
+    }
+}
+@media only screen and (min-width:351px) and (max-width:920px) { 
+    html  , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: none;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 95%;
+    }
+    .bottom-header .row-bot { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        position:relative;
+        left: 25px;
+    }
+    .bottom-header .row-bot .col { 
+        flex-basis: 25%;
+    }
+    .bottom-header .row-bot .col .icon { 
+        position: relative;
+    }
+    .bottom-header .row-bot .col .icon  a i { 
+        font-size: 16px;
+        color: #333;
+    }
+    #grey-icon { 
+        color: rgb(155, 152, 152);
+    }
+    .myblog { 
+        position: relative;
+        padding: 25px;
+        height: 100vh;
+    }
+    .myblog .row { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        padding: 15px 0;
+    }
+    .myblog .row .col { 
+        flex-basis: 25%;
+        position: relative;
+    }
+    .myblog .row .col img { 
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        cursor: pointer;
+    }
+    .myblog .row .col img:hover { 
+        filter: brightness(50%);
+        transition: 0.3s ease-in;
+    }
+    .myblog .row .col  i { 
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        font-size: 20px;
+        color: #f3f3f3;
+    }
+}
+@media only screen and (min-width:921px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .bottom-header , .myblog { 
+        display: none;
+    }
+.blog { 
+    display: initial;
+}
+
+}
+@media only screen and (min-width:1241px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .blog { 
+        display: initial;
+    }
+    .myblog , .bottom-header { 
+        display: none;
+    }
+}
 /*End of the HTML - CSS code */ 

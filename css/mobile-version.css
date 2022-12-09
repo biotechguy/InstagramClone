@@ -1,0 +1,243 @@
+html , body { 
+    overflow-x: hidden;
+    color: #333;
+    background-color: #f5f5f5;
+}
+* { 
+    padding: 0; 
+     margin: 0;
+}
+ul ,ol { 
+    list-style-type: none;
+}
+a { 
+    text-decoration: none;
+}
+video { 
+    width: 100%;
+}
+@font-face {
+    font-family: "Bold";
+    src: url(../fonts/SFUIText-Bold.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../fonts/SFUIText-Light.otf);
+}
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/SFUIText-Regular.otf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../fonts/SFUIText-Italic.otf);
+}
+.bottom-header { 
+    display: none;
+    padding: 10px 20px;
+    display: block;
+    position: fixed;
+    z-index: 11112;
+    background: #fff;
+    width: 100%;
+    top: 95%;
+}
+.bottom-header .row-bot { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    position:relative;
+    left: 25px;
+}
+.bottom-header .row-bot .col { 
+    flex-basis: 25%;
+}
+.bottom-header .row-bot .col .icon { 
+    position: relative;
+}
+.bottom-header .row-bot .col .icon  a i { 
+    font-size: 16px;
+    color: #333;
+}
+#grey-icon { 
+    color: rgb(155, 152, 152);
+}
+.myblog { 
+    position: relative;
+    padding: 25px;
+    height: 100vh;
+}
+.myblog .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 15px 0;
+}
+.myblog .row .col { 
+    flex-basis: 25%;
+    position: relative;
+}
+.myblog .row .col img { 
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+}
+.myblog .row .col img:hover { 
+    filter: brightness(50%);
+    transition: 0.3s ease-in;
+}
+.myblog .row .col  i { 
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 20px;
+    color: #f3f3f3;
+}
+@media only screen and (max-width:350px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 95%;
+    }
+    .bottom-header .row-bot { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        position:relative;
+        left: 25px;
+    }
+    .bottom-header .row-bot .col { 
+        flex-basis: 25%;
+    }
+    .bottom-header .row-bot .col .icon { 
+        position: relative;
+    }
+    .bottom-header .row-bot .col .icon  a i { 
+        font-size: 16px;
+        color: #333;
+    }
+    #grey-icon { 
+        color: rgb(155, 152, 152);
+    }
+    .myblog { 
+        position: relative;
+        padding: 25px;
+        height: 100vh;
+    }
+    .myblog .row { 
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .myblog .row .col { 
+        flex-basis: 25%;
+        position: relative;
+    }
+    .myblog .row .col img { 
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        cursor: pointer;
+    }
+    .myblog .row .col img:hover { 
+        filter: brightness(50%);
+        transition: 0.3s ease-in;
+    }
+    .myblog .row .col  i { 
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        font-size: 20px;
+        color: #f3f3f3;
+    }
+}
+@media only screen and (min-width:351px) and (max-width:920px) { 
+    html  , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    .bottom-header { 
+        display: block;
+        padding: 10px 20px;
+        display: block;
+        position: fixed;
+        z-index: 11112;
+        background: #fff;
+        width: 100%;
+        top: 95%;
+    }
+    .bottom-header .row-bot { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        position:relative;
+        left: 25px;
+    }
+    .bottom-header .row-bot .col { 
+        flex-basis: 25%;
+    }
+    .bottom-header .row-bot .col .icon { 
+        position: relative;
+    }
+    .bottom-header .row-bot .col .icon  a i { 
+        font-size: 16px;
+        color: #333;
+    }
+    #grey-icon { 
+        color: rgb(155, 152, 152);
+    }
+    .myblog { 
+        position: relative;
+        padding: 25px;
+        height: 100vh;
+    }
+    .myblog .row { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        padding: 15px 0;
+    }
+    .myblog .row .col { 
+        flex-basis: 25%;
+        position: relative;
+    }
+    .myblog .row .col img { 
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        cursor: pointer;
+    }
+    .myblog .row .col img:hover { 
+        filter: brightness(50%);
+        transition: 0.3s ease-in;
+    }
+    .myblog .row .col  i { 
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        font-size: 20px;
+        color: #f3f3f3;
+    }
+}

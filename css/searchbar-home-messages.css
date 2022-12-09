@@ -33,6 +33,11 @@ video {
     font-family: "Italic";
     src: url(../fonts/SFUIText-Italic.otf);
 }
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/SFUIText-Regular.otf);
+    font-weight: 100;
+}
 .blog { 
     padding: 30px;
     display: flex;
